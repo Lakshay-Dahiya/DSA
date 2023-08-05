@@ -18,6 +18,7 @@ public class EvenDigits {
             return true;
         }return false;//
     }
+    /* this function counts number of digits */
     static int digits(int num){
         if(num < 0)
         {
