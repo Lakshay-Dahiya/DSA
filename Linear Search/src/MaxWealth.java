@@ -12,7 +12,7 @@ public class MaxWealth {
                 sum= sum + accounts[person][account];
             }
             //now we have sum of accounts of a person
-            //
+            //check with overall ans
             if(sum > ans){
                 ans = sum;
             }
