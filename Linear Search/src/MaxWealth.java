@@ -1,9 +1,9 @@
 public class MaxWealth {
     public static void main(String[] args) {
-
+        int [] accounts ={};
 
     }
-    public int maximumWealth(int[][ accounts]){
+    public int maximumWealth(int[][accounts]){
         //person=row , account=column
         int ans = Integer.MIN_VALUE;
         for (int person = 0; person < acoounts.length; person++) {
