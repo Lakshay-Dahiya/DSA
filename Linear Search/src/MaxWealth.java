@@ -11,7 +11,8 @@ public class MaxWealth {
             for (int account = 0; account < accounts[person].length; account++) {
                 sum= sum + accounts[person][account];
             }
-            
+            //now we have sum of accounts of a person
+            //
             if(sum > ans){
                 ans = sum;
             }
