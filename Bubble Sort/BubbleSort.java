@@ -1,7 +1,8 @@
 public class BubbleSort {
     public static void main(String[] args) {
         int [] arrr = {-1,7,-32,0,89};
-        System.out.println(Arrays.toString);
+        bubble(arrr);
+        System.out.println(Arrays.toString(arrr));
     }
     static void bubble(int[] arr){
         boolean swapped;
