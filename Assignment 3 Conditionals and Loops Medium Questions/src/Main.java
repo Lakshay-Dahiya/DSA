@@ -1,17 +1,34 @@
-// Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
-// then press Enter. You can now see whitespace characters in your code.
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-        // Press Alt+Enter with your caret at the highlighted text to see how
-        // IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter n: ");
+        int n = scanner.nextInt();
+        System.out.print("Enter r: ");
+        int r = scanner.nextInt();
 
-        // Press Shift+F10 or click the green arrow button in the gutter to run the code.
-        for (int i = 1; i <= 5; i++) {
+        long result = calculateCombination(n, r);
+        System.out.println("nCr(" + n + ", " + r + ") = " + result);
 
-            // Press Shift+F9 to start debugging your code. We have set one breakpoint
-            // for you, but you can always add more by pressing Ctrl+F8.
-            System.out.println("i = " + i);
+        scanner.close();
+    }
+
+    public static long calculateCombination(int n, int r) {
+        if (r < 0 || r > n) {
+            return 0;
         }
+        return factorial(n) / (factorial(r) * factorial(n - r));
+    }
+
+    public static long factorial(int n) {
+        if (n == 0) {
+            return 1;
+        }
+        long result = 1;
+        for (int i = 1; i <= n; i++) {
+            result *= i;
+        }
+        return result;
     }
 }
