@@ -1,7 +1,7 @@
 public class PrimeOptimised {
     public static void main(String[] args) {
-        int n = 30;
-        for(int i=0 ; i<=n ; i++){
+        int limit = 30;
+        for(int i=0 ; i<=limit ; i++){
             System.out.println((i + " " + isPrime(i)));
         }
     }
