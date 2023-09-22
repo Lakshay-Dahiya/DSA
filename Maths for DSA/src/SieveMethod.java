@@ -21,3 +21,15 @@ public class SieveMethod {
         }
     }
 }
+/* for(int i=2 ; i*i<=n; i++){
+        if([!primes]){
+            for(int j=2*i ; j<=n; j+=i){
+                primes[j]=true;
+                }
+                }
+                }
+    for(int i=2 ; i<=n ; i++){
+        if(!primes[i]){
+            sout(i + " ");
+            }}
+* */
