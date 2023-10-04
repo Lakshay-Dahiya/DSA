@@ -12,6 +12,6 @@ public class Fibonacci {
         int ans = fib(n-2) + fib(n-1);
         return ans;
         //rerurn fib(n-2) + fib(n-1)
-        
+
     }
 }
